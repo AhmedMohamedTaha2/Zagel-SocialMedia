@@ -1,0 +1,306 @@
+:root {
+    --black: #000000;
+    --dark-purple: #0d0221;
+    --eminence: #5e1d6d;
+    --eminence-light: #5a3581;
+    --yinmn-blue: #355281;
+    --lapis-lazuli: #47628c;
+    --jasmine: #ffe478;
+    --ivory: #fffefb;
+  }
+  
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+  
+        background-image: linear-gradient(
+          180deg,
+          hsl(0deg 0% 0%) 0%,
+          hsl(250deg 100% 6%) 29%,
+          hsl(256deg 100% 7%) 43%,
+          hsl(266deg 99% 8%) 57%,
+          hsl(280deg 100% 8%) 71%,
+          hsl(302deg 100% 6%) 100%
+        );
+      
+}
+.navbar {
+    position: fixed;   
+    top: 0;            
+    width: 100%;       
+    z-index: 1000;    
+    background-color: #000000 !important;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.navbar .container{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.offcanvass {
+    color: white;
+    background-color: #1a283e;
+    font-size: 16px;
+    transition: background-color 0.3s ease, font-size 0.3s ease, margin-top 0.3s ease; 
+}
+
+.offcanvass:hover {
+    color: white;
+    background-color: var(--yinmn-blue);
+    font-size: 20px; 
+    margin-top: -240px; 
+}
+.offcanvas{
+    
+    background-color: #000000;
+    background-image: url('../Images/css-pattern-by-magicpattern (1).png');
+    background-size: cover;
+    color: var(--ivory) !important;
+}
+.offcanvas-header{
+    /* background-color: red; */
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card {
+    max-width: 800px;
+    background-color: #ffffff;
+    color: white;
+    border: 3px solid var(--copper-gold);
+    border-radius: 15px;
+    background: rgba(0, 0, 0, 0.889);
+    border-radius: 16px;
+    box-shadow: 0px 0px 70px -55px #fff;
+    backdrop-filter: blur(18.5px);
+    -webkit-backdrop-filter: blur(18.5px);
+    border: 2px solid rgb(255, 255, 255);
+    backdrop-filter: blur(25px) saturate(180%);
+    -webkit-backdrop-filter: blur(25px) saturate(180%);
+    /* background-color: rgba(6, 0, 15, 0.91); */
+    border-radius: 12px;
+    /* border: 1px solid rgba(255, 255, 255, 0.125); */
+    box-shadow: 0px 0px 15px -3px #fff;
+
+}
+.post-img {
+    /* position: relative; */
+    overflow: hidden;
+    height: 260px;
+    object-fit: cover
+}
+.PostImg {
+    /* object-fit: cover; */
+    object-fit: cover;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+}
+.layer {
+    position: absolute;
+    background-color: rgba(16, 16, 16, 0.253);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    justify-content: start !important;
+    align-items: end !important;
+}
+
+.image-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.622);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+.image-modal img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 8px;
+    border: 2px solid #ffffff;
+    box-shadow: 0px 0px 50px -20px #fcfcfc;
+}
+.d-none {
+    display: none;
+}
+.modal-content {
+    background-color: #0000005b;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(10px); /* Blur effect */
+    -webkit-backdrop-filter: blur(10px); /* Safari support */
+}
+.close-modal {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    background-color: transparent;
+    color: white;
+    font-size: 40px;
+    cursor: pointer;
+    z-index: 10000;
+}
+.close-modal:hover {
+    color: #ff0000;
+}
+a{
+    text-decoration: none;
+    color:var(--ivory);
+}
+.datte{
+    font-size: 10px !important;
+}
+.main{
+    min-height: 1000px;
+    margin-top: 160px;
+    /* background-color: #000000; */
+
+}
+.navbar{
+    background-color:rgb(255, 255, 255);  
+    color: rgb(0, 0, 0) !important;
+}
+.nav-item{
+    background-color: #220a27;
+}
+.comment{
+    background-color:#0d0221
+}
+.post-comments{
+    background-color: #000000;
+}
+
+.btn-close{
+    background-color: #fff6f6;
+    color: white;
+}
+.NewPostForm{
+
+min-height: 500px;
+/* From https://css.glass */
+background: rgba(0, 0, 0, 0.785);
+border-radius: 16px;
+box-shadow: 0px 0px 15px -3px #fff;
+backdrop-filter: blur(11.6px);
+-webkit-backdrop-filter: blur(11.6px);
+border: 1px solid rgba(255, 255, 255, 0.633);
+}
+.textarea{
+    background-color: #000000 ;
+    color: #fff;
+        
+}
+.textarea::placeholder{
+    color:var(--ivory);
+}
+.textarea:focus{
+    background-color: #18001a ;
+    color: #fff;
+    border: 2px solid var(--ivory);
+    border-color:var(--ivory); 
+    box-shadow: 0 0 10 14px var(--ivory);
+    outline: none; 
+}
+.form-select{
+    background-color: #000000 ;
+    color: #fff;
+}
+.form-select:focus{
+    /* background-color: #18001a ; */
+    color: #fff;
+    border: 2px solid var(--ivory);
+    border-color:var(--ivory); 
+    box-shadow: 0 0 10 14px var(--ivory);
+    outline: none; 
+}
+.selected{
+    background-color: #000000 ;
+}
+.option{
+ background-color: #18001a;
+}
+.left{
+    position: relative;
+}
+.data{
+    position: absolute;
+    right:1150px;
+}
+.roww{
+    display: block !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+.creatorInfo{
+    background-color: var(--dark-purple);
+}
+.creatingPost {
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: height 0.6s ease, opacity 0.6s ease;
+}
+
+.creatingPost.active {
+    height: auto;
+    opacity: 1;
+}
+.writePost {
+    z-index: 1000;
+    position: fixed;
+    right: 2rem;
+    bottom: 2rem;
+}
+
+@media (max-width: 768px) {
+    .writePost {
+        right: 1rem;
+        bottom: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .writePost {
+        right: 0.5rem;
+        bottom: 0.5rem;
+    }
+}
+.hidden{
+    display: none;
+}
+button{
+    border: none;
+    background-color: transparent;
+    color: white;
+}
+.editing{
+    background-color: #280171;
+    outline:2px solid white;
+    padding:8px;
+    border-radius:5px;
+}
+.form-outline #loginName::placeholder{
+    color: red !important;
+}

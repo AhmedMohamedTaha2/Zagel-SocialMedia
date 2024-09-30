@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.2/mdb.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./styleing/signing.css">
+    <title>Zagel - Unique Social Media Platform</title>
+    
+</head class="mb-0">
+<body>
+    <div class="container mb-0">
+<!-- ====================================================================== -->
+            <div class="container  text-center main">               
+                <div class="container ">
+                    <div class="row m-4">
+                        <div class="col-lg-5 align-self-center">
+                            <div class="lc-block about-img-shape position-relative "> <img class="img-fluid rounded-2" src="./Images/home images/df0a1633-882f-4456-b44c-ddb9bf0eadd5.jfif" alt="">
+                            </div>
+                        </div>
+                        <div class="col-lg-6 offset-lg-1 my-2 align-self-center">
+                            <div class="row my-0  ">
+                                <div class="container mb-5 text-light  texxt">
+                                    <div class="row justify-content-center">
+                                        <div class="lc-block text-center col-md-8">
+                                            <div editable="rich"></div>
+                                        </div>
+                                    </div>
+                                    <div class="row justify-content-center">
+                                        <div class="lc-block text-center">
+                                            <div editable="rich">
+                                                <p class="lead">
+                                                    <span class="typed-text mt-1 mb-5 fs-lg-1  fs-md-5 fw-bold"></span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a href="#foorm" class="btn btn-light bttn hidden">Go Now</a>
+                                </div>
+                            </div>
+                            <!-- /lc-block -->
+                        </div>
+                    </div>
+
+                </div>
+
+            </div> 
+<!-- ====================================================================== -->
+            <div dir="ltr" class="mypath py-5 container text-light">
+            <div class="lc-block">
+            <div editable="rich">
+                <i class="fa-regular fa-star text-light fs-1"></i>
+            <h2>
+                <i class="fa-regular fa-lightbulb"></i>
+                Inspiration
+            </h2>
+            <p>
+                The name "Zagel" is derived from the historical practice of using carrier pigeons for communication. In the past, these pigeons were trained to deliver messages across vast distances, symbolizing a form of connection that transcended barriers. 
+            </p>
+            </div>
+            </div>
+            <div class="lc-block">
+            <div editable="rich">
+            <h2>
+                <i class="fa-solid fa-chalkboard"></i>
+                platform
+            </h2>
+            <p>Zagel, the platform, embodies this spirit of connection, reimagined for the digital age. By choosing a name that carries a sense of nostalgia and cultural significance, Zagel bridges the gap between tradition and modern communication.</p>
+            </div>
+            </div>
+            <div class="lc-block">
+            <div editable="rich">
+
+            <h2>
+                <i class="fa-solid fa-people-group"></i>
+                Audience Appeal
+            </h2>
+            <p>
+                Zagel combines cultural depth with a modern, synthwave-inspired design to appeal to a wide audience. Its historical context resonates with older generations, while its fresh aesthetic attracts Gen Z. This blend of tradition and modernity gives it a unique and memorable identity, standing out in the competitive social media space.
+            </p>
+            </div>
+            </div>
+            <div class="lc-block">
+            <div editable="rich">
+
+            <h2>
+                <i class="fa-solid fa-palette"></i>
+                Design 
+            </h2>
+            <p>Zagel's synthwave theme, featuring neon colors, grid lines, and retro-futuristic elements, goes beyond just visual appeal. It creates a nostalgic yet modern atmosphere, blending digital nostalgia with a cutting-edge feel. This aesthetic enhances user engagement by offering a vibrant and immersive interface that feels both familiar and forward-thinking.</p>
+
+            </div>
+            </div>
+            <div class="lc-block">
+            <div editable="rich end">
+
+            <h2>
+                <i class="fa-solid fa-screwdriver-wrench"></i>
+                Technology Stack
+            </h2>
+            <p>
+                Zagel's modern technology stack ensures a smooth user experience. It uses HTML5, CSS, and JavaScript for structure, styling, and interactivity, with Tailwind CSS enabling flexible UI development. Postman and Axios handle efficient API communication.
+            </p>
+            <i class="fa-solid fa-angles-right fs-2"></i>
+            </div>
+            </div>
+
+
+
+            </div> 
+<!-- ====================================================================== -->
+<div id="foorm" class="container py-1 foorm">
+  <div id="forrm" dir="ltr" class="container border border-2 border-light forrm col-lg-6 rounded-4">
+    <!-- Pills navs -->
+    <ul class="nav nav-pills nav-justified mb-3" id="ex1" role="tablist">
+      <li class="nav-item" role="presentation">
+        <a class="nav-link active" id="tab-login" href="#" onclick="showLoginForm()" role="tab"
+          aria-selected="true">Login</a>
+      </li>
+      <li class="nav-item" role="presentation">
+        <a class="nav-link" id="tab-register" href="#" onclick="showRegisterForm()" role="tab"
+          aria-selected="false">Register</a>
+      </li>
+    </ul>
+    <!-- Pills navs -->
+
+    <!-- Pills content -->
+    <div class="tab-content">
+      <!-- Login Form -->
+      <div class="tab-pane show active" id="pills-login" role="tabpanel" aria-labelledby="tab-login">
+        <form id="loginForm">
+          <!-- Email input -->
+          <label for="">Enter your UserName</label>
+          <div class="form-outline mb-4">
+            <input type="text" id="loginName" minlength="6" maxlength="30" required class="form-control" placeholder="username" />
+          </div>
+
+          <!-- Password input -->
+          <label for="">Enter your Password</label>
+          <div class="input-group mb-4">
+            <input type="password" id="loginPassword" required class="form-control" placeholder="Password"
+              aria-label="Password"  minlength="8" maxlength="30" />
+            <button class="btn btn-outline-secondary" type="button" id="togglePassword">
+              <i class="fas fa-eye"></i>
+            </button>
+          </div>
+
+          <!-- Submit button -->
+          <button type="submit" data-mdb-button-init data-mdb-ripple-init
+            class="btn btn-primary btn-block mb-4 signIn">Sign in</button>
+        </form>
+      </div>
+
+      <!-- Register Form -->
+      <div class="tab-pane text-light" id="pills-register" role="tabpanel" aria-labelledby="tab-register">
+        <form id="registerForm" class="registerForm text-dark">
+          <!-- Name input -->
+          <label for="" class="text-light" >Enter your Name</label>
+          <div class="form-outline mb-4">
+            <input type="text" id="registerName" class="form-control registerName text-dark" placeholder="Name" />
+          </div>
+
+          <!-- Username input -->
+          <label for="" class="text-light">Enter your Username</label>
+          <div class="form-outline mb-4">
+            <input type="text" id="registerUsername" class="form-control registerUsername " placeholder="Username" />
+          </div>
+
+          <!-- Email input -->
+          <label for="" class="text-light">Enter your Profile Image</label>
+          <!-- Image input -->
+          <div class="form-outline mb-4">
+            <input type="file" id="registerImage" class="form-control registerImage" placeholder="Images" />
+          </div>
+
+          <!-- Password input -->
+          <label for="" class="text-light">Enter your Password</label>
+          <div class="form-outline mb-4">
+            <input type="password" id="registerPassword" class="form-control registerPassword" placeholder="Password" />
+          </div>
+
+          <!-- Repeat Password input -->
+          <label for="" class="text-light">Repeat Your Password</label>
+
+          <div class="form-outline mb-4">
+            <input type="password" id="registerRepeatPassword" class="form-control registerRepeatPassword" placeholder="Repeat password" />
+          </div>
+
+          <!-- Submit button -->
+          <button type="submit" data-mdb-button-init data-mdb-ripple-init
+            class="btn btn-primary btn-block mb-3">Register</button>
+        </form>
+      </div>
+    </div>
+    <!-- Pills content -->
+  </div>
+</div>
+<!-- ====================================================================== -->
+</div>
+<!-- ====================================================================== -->
+ 
+  
+    
+<section dir="ltr" class="container-fluid mb-0 bg-light">
+	<div class="container">
+		<div class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-4 mt-5  d-flex flex-row align-self-center justify-content-center">
+			<div class="col mb-3">
+				<div class="lc-block mb-3"><a class="navbar-brand" href="">
+						<img class="img-fluid me-1" src="./Images/bird.png" alt="my brand" width="60px" height="60px" lc-helper="image">
+					</a></div>
+				<div class="lc-block">
+					<div editable="rich">
+
+						<p class="text-muted">© Zagel.Inc</p>
+					</div>
+				</div>
+
+			</div>
+			<div class="col offset-md-2 mb-3">
+				<div class="lc-block mb-4">
+					<div editable="rich">
+						<h4>Get Started</h4>
+					</div>
+				</div>
+				<!-- /lc-block -->
+				<div class="lc-block small">
+        <style>
+          .footer-links-list ul { padding-left:0 }
+          .footer-links-list ul li {margin-bottom:15px; list-style-type:none;padding-left:0 }
+          .footer-links-list a {text-decoration:none; color:var(--bs-body-color);}
+        </style>
+					<div editable="rich" class="footer-links-list">
+
+						<ul>
+							<li>
+                <a style="font-size:14px;" href="https://www.linkedin.com/in/ahmed-mohamed-taha-5a4b49222/">
+                  <i class="fa-brands fa-linkedin"></i>
+                  - linkedin
+                </a>
+              </li>
+							<li>
+                <a style="font-size:14px;" href="https://www.linkedin.com/in/ahmed-mohamed-taha-5a4b49222/">
+                  <i class="fa-brands fa-github"></i>
+                  - Github
+                </a>
+              </li>
+							<li>
+                <a style="font-size:14px;" href="https://www.linkedin.com/in/ahmed-mohamed-taha-5a4b49222/">
+                  <i class="fa-brands fa-facebook"></i>
+                  - FaceBook
+                </a>
+              </li>
+							<li>
+                <a style="font-size:14px;" href="https://www.linkedin.com/in/ahmed-mohamed-taha-5a4b49222/">
+                  <i class="fa-brands fa-twitter"></i>
+                  - Twitter
+                </a>
+              </li>
+
+						</ul>
+
+					</div>
+				</div>
+				<!-- /lc-block -->
+			</div>
+			<div class="col mb-3">
+				<div class="lc-block mb-4">
+					<div editable="rich">
+						<h4>About us</h4>
+					</div>
+				</div>
+				<!-- /lc-block -->
+				<div class="lc-block small">
+					<div editable="rich" class="footer-links-list">
+
+						<ul>
+							<li><a href="#">Story</a> </li>
+							<li><a href="#">Work with us</a></li>
+							<li><a href="#">Blog</a> </li>
+							<li><a href="#">News</a> </li>
+						</ul>
+
+					</div>
+				</div>
+				<!-- /lc-block -->
+			</div>
+
+		</div>
+	</div>
+</section>
+ 
+
+
+    <!-- MDB JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.2/mdb.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="./scripts/wow.js"></script>
+    <script src="./scripts/type.js"></script>
+    <!-- <script src="./scripts/loginScript.js"></script> -->
+     <script src="./scripts/AuthenticationScript.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>

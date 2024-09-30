@@ -1,0 +1,200 @@
+    <!DOCTYPE html>
+    <html dir="rtl">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+        <link rel="stylesheet" href="../styleing/main.css">
+        <title>Document</title>
+    </head>
+    <body>
+<!-- =================================================== Header Section =================================================== -->
+    <nav class="navbar py-0">
+        <div class="container text-light">
+          
+            <div class="left d-flex flex-row align-items-center">
+                <a class="navbar-brand text-light" href="#">
+                    <img class="img-fluid me-1" src="../Images/bird.png" alt="my brand" width="70" height="70">
+                </a>
+                <a class="navbar-brand text-light d-flex flex-row align-items-center justify-content-center" href="#">
+                    <img class="currentUserImage img-fluid rounded-circle border border-3 border-light mx-1" src="../Images/ششش.jfif" alt="my brand" style="width: 50px; height: 50px;">
+                    <h6 class="currentUserName mx-1">Ahmed Mohamed Taha</h6>
+                </a>
+            </div>
+
+
+            <button class="navbar-toggler text-light d-block" type="button" data-bs-toggle="collapse" data-bs-target="#nav_lc_hm" aria-controls="nav_lc_hm" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <div class="collapse text-light navbar-collapse my-2 text-end border-bottom border-2 border-light" id="nav_lc_hm">
+                <ul class="navbar-nav my-3 my-lg-0 ms-lg-3 text-end ">
+                    <!-- <li class="nav-item me-4 mb-2 px-5 rounded-2  border border-1 border-light">
+                        <a class="nav-link text-light fw-bold" href="#"> <i class="fa-solid fa-house"></i> - الصفحة الرئيسية</a>
+                    </li>
+                    <li class="nav-item me-4 mb-2 px-5 rounded-2  border border-1 border-light">
+                        <a class="nav-link text-light fw-bold" href="#"><i class="fa-solid fa-user"></i> - الحساب الشخصي</a>
+                    </li> -->
+                    <li class="nav-item me-4 mb-2 px-5 rounded-2  border border-1 border-light">
+                        <a class="nav-link text-light fw-bold logout-btn" href="#"><i class="fa-solid fa-right-from-bracket"></i> - تسجيل الخروج</a>
+                    </li>
+                </ul>
+            </div>  
+        </div>
+    </nav>
+
+<!-- ===================================================  Main Content =================================================== -->
+    <div class="container main my-5  py-5 d-flex flex-column align-items-center">
+<!-- ===================================================  creating Post =================================================== -->
+<div dir="rtl" class="col-lg-8 col-md-10 col-sm-12 creatingPost d-flex flex-column border border-2 border-light rounded-3 p-0 mx-auto my-4">
+    <div class="creatorInfo py-3 px-3 border-bottom border-2 border-light d-flex align-items-center">
+        <img src="https://via.placeholder.com/60x60" class="rounded-circle creatorImage " style="width: 50px; height: 50px;" alt="Profile">
+        <div class="mx-3">
+            <p class="text-light fw-bold mb-0 creatorName">Ahmed Mohamed Taha</p>
+            <p class="text-light mb-0 creatorUsername">@ahmed</p>
+        </div>
+    </div>
+
+    <div class="postInfoText px-3 mt-2">
+        <textarea class="form-control bg-light text-dark border-0" rows="4" placeholder="شاركنا ما في عقلك ..." style="resize: none;"></textarea>
+    </div>
+
+    <div class="extras py-3 px-3">
+        <div class="mb-3">
+            <label for="formFile" class="form-label text-light">إضافة صورة:</label>
+            <input class="form-control" type="file" id="formFile" aria-label="Upload an image">
+        </div>
+
+    </div>
+
+    <div class="d-flex justify-content-center px-3 pb-3">
+        <button type="submit" class=" submit-btn btn btn-primary w-50">
+            <i class="fa-solid fa-paper-plane"></i>
+            - أنشر
+        </button>
+    </div>
+</div>
+<button class="btn btn-light writePost"><i class="fa-solid fa-pen-to-square"></i></button>
+<!-- ===================================================  Existing Posts =================================================== -->
+        <div class="cardContainer container-fluid d-flex flex-column align-items-center my-4">
+            <!-- <div class="card p-3 my-3 w-100 rounded-lg">
+    
+                <div class="d-flex align-items-center ">
+                    <img src="../Images/ششش.jfif" alt="Profile Image" class="rounded-circle border border-2" style="width: 48px; height: 48px; object-fit: cover;">
+                    <div class="ms-2 d-flex flex-column me-2">
+                        <span class="fw-bold text-light">أحمد محمد طه</span>
+                        <span dir="ltr" class=" text-light">@ahmed_m_taha</span>
+                    </div>
+                </div>
+        
+                <div class="tweet-content my-2 px-1">
+                    <p class="mb-1 post-text">
+                        ‏مبدع، شامخ ، قوي ، رجل ، شجاع ، أسد ، أسطورة ، عظيم ، زعيم ، شهم ، بطل ، فتاك ، جلاد ، كريم ، ذيب ، محزم ، مطنوخ ، صنديد ، مدهال، فارس ، مغوار ، محارب ،  بتار ، جسور، انيق ، جميل ، متعلم ، جلاد ، نشمي ، مدهال ، كسار ، فارس ،صلب،قائد ، ذيبان ، نسر ، مطنوخ ، نمر ، ذكي ، مجتهد، شنب، مرعب ، مقاتل ، محارب ، فارس ، جلاد ، سفاح  ، غضنفر، عظيم ، جبار ، اخاذ ، بديع ، رائع ، صنديد ، مِقدام ، كفوّ ، فهِيم ، قويم ،عَنيد ، سمْح ، نشمِي ، مثابر، مغامر، شيخ ،  أًشوَسُ , مِقْدَام, كفو ، صقر ، بطل ، بَتار , مقدام ، جلاد، محزم ، مطنوخ ، نشمي ، صنديد ، مدهال ، كسار ، فارس ، مغوار ، محارب ، بتار ، جسور ، أَخَّاذ , جَذَّاب  , خَلاّب , ساحِر , رائع , مقاتل , فخر .
+                        ‏مبدع، شامخ ، قوي ، رجل ، شجاع ، أسد ، أسطورة ، عظيم ، زعيم ، شهم ، بطل ، فتاك ، جلاد ، كريم ، ذيب ، محزم ، مطنوخ ، صنديد ، مدهال، فارس ، مغوار ، محارب ،  بتار ، جسور، انيق ، جميل ، متعلم ، جلاد ، نشمي ، مدهال ، كسار ، فارس ،صلب،قائد ، ذيبان ، نسر ، مطنوخ ، نمر ، ذكي ، مجتهد، شنب، مرعب ، مقاتل ، محارب ، فارس ، جلاد ، سفاح  ، غضنفر، عظيم ، جبار ، اخاذ ، بديع ، رائع ، صنديد ، مِقدام ، كفوّ ، فهِيم ، قويم ،عَنيد ، سمْح ، نشمِي ، مثابر، مغامر، شيخ ،  أًشوَسُ , مِقْدَام, كفو ، صقر ، بطل ، بَتار , مقدام ، جلاد، محزم ، مطنوخ ، نشمي ، صنديد ، مدهال ، كسار ، فارس ، مغوار ، محارب ، بتار ، جسور ، أَخَّاذ , جَذَّاب  , خَلاّب , ساحِر , رائع , مقاتل , فخر .
+                    </p>
+                </div>
+        
+                <div class="post-img mb-3 text-center rounded-1 position-relative border-top border-bottom border-2 border-light">
+                    <div class="layer d-flex flex-row align-items-center justify-content-center" >
+                        <button class="btn btn-light fw-bold" id="show-full-image-btn">أعرض الصورة كاملة</button>
+                    </div>
+                    <img src="../Images/ششش.jfif" class="img-fluid PostImg rounded-2" alt="Post Image" >
+                </div>
+        
+                <div class="post-reactions d-flex justify-content-between pt-3">
+                    <div>
+                        <a href="#" class="mx-2"><i class="fa-regular fa-heart text-danger"></i> أعجاب</a>
+                        <a class="mx-2" data-bs-toggle="collapse" href="#collapseComments" role="button" aria-expanded="false" aria-controls="collapseComments">
+                            <i class="fa-regular fa-comment-dots text-success"></i> تعليق
+                        </a>
+                        <a href="#" class="mx-2 edit-btn "><i class="fa-solid fa-pen-to-square text-warning "></i> تعديل</a>
+                        <a href="#" class="mx-2 save-changes-btn hidden"><i class="fa-solid fa-check text-info"></i> حفظ</a>
+                    </div>
+                    <div>
+                        <a href="#" class="badge bg-secondary">#رياضة</a>
+                        <a href="#" class="badge bg-secondary">#تقنية</a>
+                    </div>
+                </div>
+
+                <div class="collapse my-2 " id="collapseComments">
+                    <div class="post-comments text-light px-3 py-3 mt-2 rounded-2 border border-1 border-light">
+                        
+                        <div class="comment border border-1 border-light rounded-2 p-2 d-flex align-items-start mb-3">
+                            <img src="../Images/ششش.jfif" alt="Profile Image" class="rounded-circle border border-2" style="width: 48px; height: 48px; object-fit: cover;">
+                            <div class="ms-2 d-flex flex-column me-2 w-100">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="d-flex flex-column">
+                                        <span class="fw-bold text-light">أحمد محمد طه</span>
+                                        <span dir="ltr" class="text-light">@ahmed_m_taha</span>
+                                    </div>
+                                    <small class="text-light"><i class="fa-solid fa-calendar-days"></i> 01/05/2024</small>
+                                </div>
+                                <div class="comment-content p-2 bg-white text-dark border rounded shadow-sm mt-2">
+                                    <p class="mb-0">هذا تعليق على المنشور.</p>
+                                </div>
+                            </div>
+                        </div>
+                
+                        <div class="write-comment d-flex align-items-center p-2 rounded  mt-3 shadow-sm">
+                            <input class="form-control me-2" type="text" placeholder="أضف تعليقك هنا..." style="border-radius: 25px;">
+                            <button class="btn btn-primary me-2" style="border-radius: 25px;"><i class="fa-solid fa-paper-plane"></i></button>
+                        </div>
+                    </div>
+                </div>
+                
+            </div> -->
+        </div>
+    </div>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
+        <div class="offcanvas-header d-flex flex-row border bg-light text-dark border-2 border-light justify-content-between align-items-center">
+          <h5 class="offcanvas-title mx-5" id="staticBackdropLabel">تعديل المنشور</h5>
+          <button type="button" class="btn-close mx-5 text-danger" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body"> 
+            <div class="editingContainer bg-dark p-3 rounded-2 border border-2 border-light">
+                <div class="postInfoText px-3 mt-2">
+                    <!-- Text area for the post's text -->
+                    <label for="formFile" class="form-label text-light">النص الحالي و يمكنك تغييره  :</label>
+                    <textarea class=" offcanvasText form-control bg-light text-dark border-0" rows="4" placeholder="شاركنا ما في عقلك ..." style="resize: none;"></textarea>
+                </div>
+        
+                <!-- Image preview section for the current post image -->
+                <div class="extras py-3 px-3">
+                    <label for="formFile" class="form-label text-light">
+                        الصورة الحالية و مفيش امكانية لتعديل الصورة <i class="fa-solid fa-face-laugh-beam fa-spin" style="color: #FFD43B;"></i>
+                    </label>
+                    <img id="imagePreview" src="#" alt="Image preview" class="img-fluid mt-3 d-none">
+                </div>    
+                <div class="d-flex justify-content-center px-3 pb-3">
+                    <button type="submit" class="submit-changes-btn editPostBtn btn btn-primary w-50">
+                        <i class="fa-solid fa-paper-plane"></i> تم التعديل
+                    </button>
+                </div>
+            </div>       
+        </div>
+        
+        
+        
+      </div>
+      
+      
+<!-- =================================================== Full Image Modal =================================================== -->
+    <div id="full-image-modal" class="image-modal d-none">
+        <div class="modal-content">
+            <span id="close-modal" class="close-modal  fw-bolder">&times;</span>
+            <img src="../Images/ششش.jfif" class="img-fluid border border-2 border-light" alt="Full Image">
+        </div>
+    </div>
+<!-- <img src="" alt=""> -->
+  </div>
+<!-- =================================================== Scripts =================================================== -->
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="../scripts/Displaying_Image.js"></script>
+    <script src="../scripts/TextLengthHandling.js"></script>
+    <script src="../scripts/GettingElements.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <!-- <script src="../scripts/gettingPostsUsingAPI.js"></script> -->
+    <!-- <script src="../scripts/CrudOnPost.js"></script> -->
+     <script src="../scripts/CRUDOperations.js"></script>
+    </body>
+    </html>

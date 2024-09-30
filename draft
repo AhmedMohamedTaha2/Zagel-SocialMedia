@@ -1,0 +1,68 @@
+<div class="container  main my-5 py-5 d-flex flex-column align-items-center">
+        <div class="card p-3 my-3  w-100">
+            <!-- Profile Section -->
+            <div class="d-flex flex-row align-items-center m-2 border-bottom border-2 border-light p-2 ">
+                <img src="./Images/ششش.jfif" alt="Profile Image" class="rounded-circle border border-2 border-light" style="width: 48px; height: 48px; object-fit: cover;">
+                <div class="ms-2 p-1 mx-1 text-end d-flex flex-column justify-content-center align-items-start">
+                    <h6 class="mb-0 fw-bold fs-lg">أحمد محمد طه</h6>
+                    <h6 class="mt-2 datte"><i class="fa-solid fa-calendar-days"></i> - <span>01/05/2024</span></h6>
+                </div>
+            </div>
+
+            <!-- Post Text -->
+                <div class="post-text mb-3">
+                    <p>
+                    ‏مبدع، شامخ ، قوي ، رجل ، شجاع ، أسد ، أسطورة ، عظيم ، زعيم ، شهم ، بطل ، فتاك ، جلاد ، كريم ، ذيب ، محزم ، مطنوخ ، صنديد ، مدهال، فارس ، مغوار ، محارب ،  بتار ، جسور، انيق ، جميل ، متعلم ، جلاد ، نشمي ، مدهال ، كسار ، فارس ،صلب،قائد ، ذيبان ، نسر ، مطنوخ ، نمر ، ذكي ، مجتهد، شنب، مرعب ، مقاتل ، محارب ، فارس ، جلاد ، سفاح  ، غضنفر، عظيم ، جبار ، اخاذ ، بديع ، رائع ، صنديد ، مِقدام ، كفوّ ، فهِيم ، قويم ،عَنيد ، سمْح ، نشمِي ، مثابر، مغامر، شيخ ،  أًشوَسُ , مِقْدَام, كفو ، صقر ، بطل ، بَتار , مقدام ، جلاد، محزم ، مطنوخ ، نشمي ، صنديد ، مدهال ، كسار ، فارس ، مغوار ، محارب ، بتار ، جسور ، أَخَّاذ , جَذَّاب  , خَلاّب , ساحِر , رائع , مقاتل , فخر .
+                    </p> 
+            </div>
+
+
+            <!-- Post Image with Preview -->
+            <div class="post-img mb-3 text-center rounded-1 position-relative border-top border-bottom border-2 border-light">
+                <div class="layer d-flex flex-row align-items-center justify-content-center">
+                    <button class="btn btn-outline-light fw-bold" id="show-full-image-btn">أعرض الصورة كاملة</button>
+                </div>
+                <img src="./Images/ششش.jfif" class="img-fluid PostImg rounded-2" alt="Post Image">
+            </div>
+
+            <!-- Post Reactions -->
+            <div class="post-reactions d-flex justify-content-between pt-3 ">
+                <div>
+                    <a href="#" class="mx-2"><i class="fa-regular fa-heart text-danger"></i> أعجاب</a>
+                    <a class="mx-2" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                        <i class="fa-regular fa-comment-dots text-success"></i> تعليق
+                    </a>
+                    <a href="#" class="mx-2"><i class="fa-regular fa-bookmark text-info"></i> حفظ</a>
+                </div>
+                <div>
+                    <a href="#" class="badge bg-secondary">#رياضة</a>
+                    <a href="#" class="badge bg-secondary">#تقنية</a>
+                </div>
+            </div>
+
+            <!-- Comments Section -->
+            <div class="collapse " id="collapseExample">
+                <div class="container-fluid post-comments rounded-2 p-1 mt-3">
+                    <div class="comment border border-1 border-light rounded-2 d-flex flex-column align-items-start justify-content-center mb-2">
+                        <div class="d-flex flex-row align-items-center m-2  p-2 ">
+                            <img src="./Images/ششش.jfif" alt="Profile Image" class="rounded-circle border border-2 border-light" style="width: 48px; height: 48px; object-fit: cover;">
+                            <div class="ms-2 p-1 mx-1 text-end d-flex flex-column justify-content-center align-items-start">
+                                <h6 class="mb-0 fw-bold fs-lg">أحمد محمد طه</h6>
+                                <h6 class="mt-2 datte"><i class="fa-solid fa-calendar-days"></i> - <span>01/05/2024</span></h6>
+                            </div>
+                        </div>
+                        <div class="comment-content px-3 py-2 bg-dark w-100 d-flex align-items-center text-end">
+                            <p class="mb-0">هذا تعليق على المنشور.</p>
+                        </div>
+                    </div>
+
+                    <!-- Write Comment Section -->
+                    <div class="write-comment container-fluid  px-0 rounded-2 d-flex">
+                        <input class="form-control rounded-2" type="text" placeholder="أضف تعليقك هنا...">
+                        <button class="btn btn-primary   me-1"><i class="fa-solid text-light fa-paper-plane"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
